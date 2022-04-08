@@ -6,9 +6,7 @@
   "main": "src/server.js",
   "scripts": {
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules src/server.ts",
-    "build": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
-    "postinstall": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
-    "start": "node dist/server.js"
+    "build": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json"
   },
   "author": "Erick <santoserick9@gmail.com>",
   "license": "MIT",
