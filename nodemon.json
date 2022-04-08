@@ -1,0 +1,8 @@
+{
+  "env": {
+    "MONGODB_USER": "admin-learningmern",
+    "MONGODB_NAME": "mongodb_mern",
+    "MONGODB_PASSWORD": "cloud.mongodb",
+    "JWT_KEY": "6{hG=KPlj#OS&Z?#k2ijw*XI4Qw%)K&-UkH9`EJO[cRsx7BrB#4IX|EM0!;H,e"
+  }
+}

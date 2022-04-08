@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@controllers/*": ["./src/controllers/*"],
+      "@models/*": ["./src/models/*"],
+      "@configs/*": ["./src/configs/*"],
+      "@routes/*": ["./src/routes/*"],
+      "@type/*": ["./src/types/*"],
+      "@utils/*": ["./src/utils/*"]
+    },
+    "target": "es2017",
+    "lib": ["ES6"],
+    "module": "commonjs",
+    "rootDir": "./src",
+    "allowJs": true,
+    "outDir": "./dist",
+    "removeComments": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,
+    "skipLibCheck": true
+  }
+}
