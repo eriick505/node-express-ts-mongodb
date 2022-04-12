@@ -3,7 +3,11 @@ import { Router } from "express";
 
 import { required } from "../middleware/login";
 
-import { getProductList, postProduct } from "@controllers/products";
+import {
+  getProductList,
+  postProduct,
+  deleteProduct,
+} from "@controllers/products";
 // import postProductController from "../controllers/products/postProduct";
 // import getProductController from "../controllers/products/getProduct";
 // import updateProductController from "../controllers/products/updateProduct";
@@ -42,6 +46,8 @@ const upload = multer({
 
 productRouter.get("/", getProductList);
 productRouter.post("/", required, upload.single("product_image"), postProduct);
+productRouter.delete("/:product_id", required, deleteProduct);
+
 // productRouter.get("/:product_id", getProductController);
 // productRouter.patch("/", login.required, updateProductController);
 // productRouter.delete("/", login.required, deleteProductController);
