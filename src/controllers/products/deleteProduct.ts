@@ -21,7 +21,7 @@ const deleteProduct = async (req: Request, res: Response) => {
 
     const response = {
       message: "Product successfully deleted",
-      category: {
+      product: {
         id_product: product_id,
         name: productFound.name,
       },
